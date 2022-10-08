@@ -1,5 +1,3 @@
-(println "Hello World!")
-
 ;1. Utilizando a linguagem Clojure, crie uma função chamada ultimo que receba uma lista e devolva o último elemento desta lista sem usar as funções já prontas e disponíveis para esta mesma finalidade na linguagem Clojure.
 (defn ultimo [lista] (reduce (fn [a b] b) lista))
 
@@ -23,8 +21,8 @@
 (defn mdc [a b] (if (zero? b) a (recur b (mod a b))))
 
 
-(println (ultimo [1 2 3 4  13 413524 624 51 51 64 51 4135 1 331 5 "teste"]))
-(println (penultimo [1 2 3 4  13 413524 624 51 51 64 51 4135 1 331 5 "teste"]))
-(println (elementoN [1 2 3 4  13 413524 624 51 51 64 51 4135 1 331 5 "teste"] 5))
-(println (inverso [1 2 3 4  13 413524 624 51 51 64 51 4135 1 331 5 "teste"]))
+(println (ultimo [1 2 3 4  13 413524 624 51 -51 64 51 4135 1 331 5 "teste"]))
+(println (penultimo [1 2 3 4  13 413524 624 -51 51 64 51 4135 1 331 5 "teste"]))
+(println (elementoN [1 2 3 4  13 413524 624 -51 51 64 51 4135 1 331 5 "teste"] 5))
+(println (inverso [1 2 3 4  13 413524 624 51 -51 64 51 4135 1 331 5 "teste"]))
 (println (mdc 18 60))
