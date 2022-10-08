@@ -21,8 +21,12 @@
 (defn mdc [a b] (if (zero? b) a (recur b (mod a b))))
 
 
-(println (ultimo [1 2 3 4  13 413524 624 51 -51 64 51 4135 1 331 5 "teste"]))
-(println (penultimo [1 2 3 4  13 413524 624 -51 51 64 51 4135 1 331 5 "teste"]))
-(println (elementoN [1 2 3 4  13 413524 624 -51 51 64 51 4135 1 331 5 "teste"] 5))
-(println (inverso [1 2 3 4  13 413524 624 51 -51 64 51 4135 1 331 5 "teste"]))
-(println (mdc 18 60))
+(println (format "Função: 1: Entrada: %s; Saída: %s"  "[1 2 3 4  13 413524 624 51 -51 64 51 4135 1 331 5 'teste']" (str (ultimo [1 2 3 4  13 413524 624 51 -51 64 51 4135 1 331 5 "teste"]))))
+
+(println (format "Função: 2: Entrada: %s; Saída: %s"  "[1 2 3 4  13 413524 624 51 -51 64 51 4135 1 331 5 'teste']" (str (penultimo [1 2 3 4  13 413524 624 51 -51 64 51 4135 1 331 5 "teste"]))))
+
+(println (format "Função: 3: Entrada: %s; Saída: %s"  "[1 2 3 4  13 413524 624 51 -51 64 51 4135 1 331 5 'teste'] 5" (str (elementoN [1 2 3 4  13 413524 624 -51 51 64 51 4135 1 331 5 "teste"] 5))))
+
+(println (format "Função: 4: Entrada: %s; Saída: %s"  "[1 2 3 4  13 413524 624 51 -51 64 51 4135 1 331 5 'teste']" (str (inverso [1 2 3 4  13 413524 624 51 -51 64 51 4135 1 331 5 "teste"]))))
+
+(println (format "Função: 5: Entrada: %s; Saída: %s"  "18 60" (str (mdc 18 60))))
